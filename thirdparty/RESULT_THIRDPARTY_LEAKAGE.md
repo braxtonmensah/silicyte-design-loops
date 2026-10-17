@@ -155,3 +155,55 @@ DBAASP plus Hemolytik and is genuinely outside our family. Close this before lea
 
 Licence: the PepBenchmark GitHub repo carries no licence file and the HF dataset card has no
 licence field. We report measurements and redistribute nothing.
+
+---
+
+# ADDENDUM 2 (2026-10-17): AMPlify replicates, and FLIP meltome is CLEAN
+
+Instrument `thirdparty/verify_more.py`. Both downloaded fresh and hashed.
+
+## AMPlify (Li et al., BMC Genomics 2022) - a third independent lab
+
+| class | exact overlap | twin >= 0.80 |
+|---|---:|---:|
+| AMP positives, `train_common` -> `test_common` (n=835) | 0.00% | **63.47%** |
+| non-AMP negatives, `train_balanced` -> `test_balanced` (n=835) | 0.00% | **30.18%** |
+
+The positive-heavy asymmetry seen in AMP Scanner v2 reproduces in an unrelated group, so it is a
+property of how the field builds AMP sets rather than a quirk of one preprocessing script. The
+repository documents no identity-based split design; at >= 0.95 the positives still read 23.23%,
+which is inconsistent with a 90% CD-HIT pass, so their filtering is weaker than AMP Scanner's.
+
+## FLIP meltome `mixed` (Dallago et al., NeurIPS 2021) - the clean one
+
+splits.zip md5 `72b9257e8d6714d203c64bedaef0724e`. 27,951 rows, train 24,817 (20,206 unique),
+test 3,134. **Exact overlap 0.00%, twin >= 0.80 = 0.29% (9 of 3,134).**
+
+FLIP clusters with `mmseqs easy-cluster --min-seq-id 0.2`, ships the cluster file, and assigns
+80/20 of **clusters** to train and test. It works, and it works on full-length proteins, which is a
+different and harder data shape than the peptide sets.
+
+**This is the most important row in the whole audit and it is a negative.** It gives the
+instrument a second independent negative control, from a different group on a different molecule
+type, alongside AMP Scanner's 40% class at 0.00%. A check that reported contamination everywhere
+would be worthless, and this one does not.
+
+### The actionable comparison
+
+| benchmark | threshold | unit assigned to split | twin >= 0.80 |
+|---|---:|---|---:|
+| PepBenchmark `hybrid_split` | 30% | k-mer group, then MMseqs2 | 29.97% / 48.56% |
+| FLIP meltome `mixed` | **20%** | **whole MMseqs2 cluster** | **0.29%** |
+
+Both cluster by identity and then split. They land two orders of magnitude apart. The lesson is
+not "clustering does not work", it is that the threshold and the unit of assignment both matter:
+representative-based clustering under-merges transitive chains, a lower threshold makes chains
+harder to break, and assigning whole clusters stops a break from crossing the split boundary.
+
+**Reframe the public claim accordingly.** "Published benchmarks leak" reads as a hit piece and
+invites dismissal. "Here is what separates the ones that leak from the one that does not" is more
+useful, harder to dismiss, and is what the data actually says.
+
+## Still not measured
+
+What any contamination rate is worth in reported accuracy on their models. Nothing was retrained.
