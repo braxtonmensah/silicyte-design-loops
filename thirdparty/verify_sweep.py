@@ -19,7 +19,7 @@ not a sweep:
 
 CPU is correct throughout: short-string edit distance, branchy, already C-level in rapidfuzz.
 """
-import csv, gzip, hashlib, io, json, os, pickle, sys, urllib.request, zipfile
+import csv, gzip, hashlib, io, json, os, pickle, re, sys, urllib.request, zipfile
 import numpy as np
 from rapidfuzz import fuzz, process
 
@@ -114,8 +114,50 @@ def lrgb_struct():
            "same CSV family and split design as Peptides-func")
 
 
+# ---------------------------------------------------------------- FLIP FASTA tasks
+# bind, conservation and secondary_structure ship FASTA rather than CSV, with the split encoded
+# in the defline as `SET=train VALIDATION=True`. Same question as the CSV tasks: does FLIP's
+# clustering hold up across every shape of task it ships, or only the ones already checked.
+def flip_fasta(task, member_hint, tag, note):
+    url = f"https://github.com/J-SNACKKB/FLIP/raw/main/splits/{task}/splits.zip"
+    raw, md5 = fetch(url, f"flip_{task}_splits.zip")
+    print(f"# {tag}: splits.zip {len(raw)} bytes md5={md5}", flush=True)
+    z = zipfile.ZipFile(io.BytesIO(raw))
+    names = [n for n in z.namelist() if member_hint in n and n.endswith((".fasta", ".fa"))]
+    if not names:
+        print(f"#   no FASTA matching {member_hint!r} in {z.namelist()[:12]}", flush=True)
+        return
+    txt = z.read(sorted(names)[0]).decode("utf-8", "replace")
+    print(f"#   using {sorted(names)[0]}", flush=True)
+    tr, te, cur, setname = [], [], [], None
+    for line in txt.splitlines():
+        if line.startswith(">"):
+            if cur and setname:
+                (tr if setname == "train" else te).append("".join(cur))
+            cur = []
+            m = re.search(r"SET=(\w+)", line)
+            setname = m.group(1).lower() if m else None
+        elif line.strip():
+            cur.append(line.strip())
+    if cur and setname:
+        (tr if setname == "train" else te).append("".join(cur))
+    print(f"#   train {len(tr)}, test {len(te)}", flush=True)
+    if not tr or not te:
+        print("#   split labels not found, skipping", flush=True)
+        return
+    report(tag, tr, te, note)
+
+
 if __name__ == "__main__":
     which = sys.argv[1] if len(sys.argv) > 1 else "all"
     if which in ("all", "meltome"): flip_rest()
     if which in ("all", "scl"):     flip_scl()
     if which in ("all", "struct"):  lrgb_struct()
+    if which in ("all", "fasta"):
+        # bind is NOT run by default: its six splits test generalisation across LIGAND TYPE
+        # (one_vs_many, one_vs_sm, one_vs_sn ...), not across sequence similarity, so a
+        # sequence-overlap number there does not mean what it means elsewhere. Run it only
+        # with that caveat attached.
+        # flip_fasta("bind", "one_vs_many", "flip_bind", "LIGAND-TYPE split, not a homology split")
+        flip_fasta("conservation", "", "flip_conservation", "residue conservation")
+        flip_fasta("secondary_structure", "sampled", "flip_secondary_structure", "3-state secondary structure")

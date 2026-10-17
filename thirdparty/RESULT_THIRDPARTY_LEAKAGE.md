@@ -268,3 +268,50 @@ A sweep that drops its awkward cases silently is not a sweep.
   about 100% by construction. The number would be real and meaningless. Running it to inflate the
   count would be the exact behaviour this project criticises in others.
 - **FLIP `bind`, `conservation`, `secondary_structure`**: not yet run, no reason other than time.
+
+---
+
+# CORRECTION (2026-10-17, 06:20 ET): "FLIP is systematically clean" was WRONG
+
+Published a few minutes earlier, withdrawn here. Three more FLIP splits were measured and one is
+badly contaminated.
+
+| FLIP split | construction, per FLIP's own README | twin >= 0.80 |
+|---|---|---:|
+| `meltome/mixed`, `human`, `human_cell` | MMseqs2 20% identity, whole clusters | 0.29% / 0.05% / 0.00% |
+| `scl/mixed_hard` | cluster-based | 0.00% |
+| `conservation/sampled` | "Randomly split sequences into `train`/`test` with 95/5% probability" | 0.00% |
+| **`secondary_structure/sampled`** | **the same sentence, verbatim, in its own README** | **65.38%** |
+
+n = 364 test against 10,792 train, exact overlap 0.00%. splits.zip md5 `9298ce249fbe83523f203b16db259541`.
+Both random splits carry FLIP's green status marker.
+
+## What the contrast actually shows, which is better than the claim it replaces
+
+The two random splits are built by the identical documented procedure and land at opposite ends.
+**So the variable is not the split method. It is corpus redundancy.** The PDB is full of
+near-identical chains; the conservation sequences are not.
+
+"Cluster your splits" was never the complete rule. A random split is safe exactly when the corpus
+is not redundant and unsafe when it is, and nobody can tell which case they are in without
+measuring. That is a stronger argument for measurement than the version that was wrong.
+
+## FLIP `bind`: measured, excluded, and the reason matters
+
+`from_publication.fasta` returns **98.33%**. **Do not publish that as leakage.** The `bind` task
+ships six splits (`from_publication`, `one_vs_many`, `one_vs_mn`, `one_vs_sm`, `one_vs_sn`,
+`two_vs_many`) that test generalisation across **ligand type**, not sequence similarity. The same
+protein recurring with a different ligand is the design, not a defect. A sequence-overlap number
+there does not mean what it means elsewhere. `from_publication` is also the original paper's split
+rather than FLIP's own.
+
+This was nearly published as "FLIP bind leaks 98%", which would have been false, and false in the
+same breath as calling FLIP clean.
+
+## Tally: 13 split measurements
+
+Dirty: FLIP secondary_structure 65.38%, LRGB peptides 65.29%, AMPlify positives 63.47%,
+PepBenchmark hemolytic hybrid 48.56%, AMPlify negatives 30.18%, PepBenchmark E. coli MIC hybrid
+29.97%, AMP Scanner v2 positives 16.71%.
+Clean: FLIP meltome mixed 0.29%, human 0.05%, human_cell 0.00%, scl 0.00%, conservation 0.00%,
+AMP Scanner v2 negatives 0.00%.
