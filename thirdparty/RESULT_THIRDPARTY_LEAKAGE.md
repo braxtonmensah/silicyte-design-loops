@@ -207,3 +207,64 @@ useful, harder to dismiss, and is what the data actually says.
 ## Still not measured
 
 What any contamination rate is worth in reported accuracy on their models. Nothing was retrained.
+
+---
+
+# ADDENDUM 3 (2026-10-17, 06:00 ET): the sweep extended to 11 split measurements
+
+Instrument `thirdparty/verify_sweep.py`. Everything downloaded fresh and hashed at run time.
+
+## FLIP is systematically clean, not accidentally clean
+
+The earlier claim rested on ONE clean FLIP split. That was thin: a check whose only negative control
+is a single task could still be a false-positive generator everywhere else. It is not.
+
+| FLIP split | n test | exact | twin >= 0.80 |
+|---|---:|---:|---:|
+| `meltome/mixed` | 3,134 | 0.00% | 0.29% |
+| `meltome/human` | 1,945 | 0.00% | **0.05%** |
+| `meltome/human_cell` | 1,366 | 0.00% | **0.00%** |
+| `scl/mixed_hard` | 490 | 0.00% | **0.00%** |
+
+Four for four, on two different tasks and two different data shapes (thermostability regression and
+10-class subcellular localisation). `scl` splits.zip md5 `82e91ea40653b95410284e3c4ce958c2`.
+
+**This is the load-bearing result of the whole audit.** Every dirty row elsewhere is only worth
+something because these rows exist. A check that flagged everything would be worthless.
+
+## LRGB Peptides-struct is NOT a second data point, and must not be reported as one
+
+Measured: train 10,873, test 2,331, exact 7.72%, twin 65.29%. Identical to Peptides-func to the
+digit, and that is not a coincidence or a confirmation.
+
+- `peptide_structure_dataset.csv.gz` md5 `9786061a34298a0684150f2e4ff13f47`, which matches the
+  loader's pinned value, so the data file genuinely differs from the func one.
+- **`splits_random_stratified_peptide_structure.pickle` md5 `5a0114bdadc80b94fc7ae974f13ef061`,
+  which is byte-identical to the func split pickle.** The train, val and test index sets are
+  identical as sets.
+
+LRGB ships **one split for both peptide tasks**, over the same 15,535 molecules. Only the label
+column differs. So this is the same computation on the same sequences, and quoting it as a second
+independent confirmation would be double-counting, which is precisely the failure mode this
+programme exists to catch.
+
+**The correct framing, which is stronger anyway:** one contaminated split underlies *both* LRGB
+peptide leaderboards, and the 30-plus published models scored on them.
+
+## Tally: 11 independent split measurements across 5 benchmark families
+
+Dirty: LRGB peptides (65.29%), AMPlify positives (63.47%), PepBenchmark hemolytic hybrid (48.56%),
+AMPlify negatives (30.18%), PepBenchmark E. coli MIC hybrid (29.97%), AMP Scanner v2 positives
+(16.71%).
+Clean: AMP Scanner v2 negatives (0.00%), FLIP meltome mixed (0.29%), human (0.05%), human_cell
+(0.00%), FLIP scl (0.00%).
+
+## Deliberately not measured, with the reason
+
+A sweep that drops its awkward cases silently is not a sweep.
+
+- **FLIP `aav` and `gb1`**, and **ProteinGym**, and **TAPE fluorescence/stability**: single-parent
+  mutant libraries. Every sequence is a variant of one wild type, so an edit-distance check returns
+  about 100% by construction. The number would be real and meaningless. Running it to inflate the
+  count would be the exact behaviour this project criticises in others.
+- **FLIP `bind`, `conservation`, `secondary_structure`**: not yet run, no reason other than time.
