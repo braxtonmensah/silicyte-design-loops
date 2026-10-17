@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use this evidence archive, please cite the paper it accompanies."
+title: "Design loops climb their scorer's error: evidence archive"
+abstract: >-
+  Pre-registrations, instruments, result files and saved out-of-fold predictions for every number
+  in the paper, plus the third-party leakage audit of LRGB Peptides-func, AMP Scanner v2 and
+  PepBenchmark.
+authors:
+  - family-names: Mensah
+    given-names: Braxton
+    affiliation: Silicyte
+version: 1.0.0
+date-released: 2026-10-17
+license: CC-BY-4.0
+repository-code: "https://github.com/braxtonmensah/silicyte-design-loops"
+url: "https://silicyte.com/papers/design-loops.html"
+keywords:
+  - data leakage
+  - machine learning evaluation
+  - antimicrobial peptides
+  - benchmark
+  - reproducibility
