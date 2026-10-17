@@ -1,0 +1,427 @@
+[
+ {
+  "target": "mic",
+  "model": "rich_all",
+  "dim": 134,
+  "spearman": 0.4131780173354044,
+  "null": 0.004684517322807166,
+  "margin": 0.4084935000125972,
+  "lams": [
+   3000.0,
+   3000.0,
+   3000.0,
+   1000.0,
+   3000.0
+  ]
+ },
+ {
+  "target": "hc",
+  "model": "rich_all",
+  "dim": 134,
+  "spearman": 0.29153160602204287,
+  "null": -0.037742009870239325,
+  "margin": 0.3292736158922822,
+  "lams": [
+   3000.0,
+   3000.0,
+   1000.0,
+   3000.0,
+   3000.0
+  ]
+ },
+ {
+  "target": "mic",
+  "model": "descriptor",
+  "dim": 36,
+  "spearman": 0.4502419265177022,
+  "null": -0.05543546673206874,
+  "margin": 0.5056773932497709,
+  "lams": [
+   "avg"
+  ],
+  "n": 2904
+ },
+ {
+  "target": "hc",
+  "model": "descriptor",
+  "dim": 36,
+  "spearman": 0.40744001083166276,
+  "null": 0.033760455931268314,
+  "margin": 0.37367955490039445,
+  "lams": [
+   "avg"
+  ],
+  "n": 1238
+ },
+ {
+  "target": "mic",
+  "model": "rich_periodicity",
+  "dim": 41,
+  "spearman": 0.45196115922461544,
+  "null": -0.05620249147675539,
+  "margin": 0.5081636507013708,
+  "lams": [
+   "avg"
+  ]
+ },
+ {
+  "target": "mic",
+  "model": "rich_windows",
+  "dim": 55,
+  "spearman": 0.4487529443168209,
+  "null": -0.039208954018910856,
+  "margin": 0.4879618983357317,
+  "lams": [
+   "avg"
+  ]
+ },
+ {
+  "target": "mic",
+  "model": "rich_ph",
+  "dim": 42,
+  "spearman": 0.45458706991815734,
+  "null": -0.042883406996536574,
+  "margin": 0.4974704769146939,
+  "lams": [
+   "avg"
+  ]
+ },
+ {
+  "target": "mic",
+  "model": "rich_indices",
+  "dim": 41,
+  "spearman": 0.45326445417693395,
+  "null": -0.0603927165377262,
+  "margin": 0.5136571707146601,
+  "lams": [
+   "avg"
+  ]
+ },
+ {
+  "target": "mic",
+  "model": "rich_autocorr",
+  "dim": 44,
+  "spearman": 0.44705862282800196,
+  "null": -0.055985639199000424,
+  "margin": 0.5030442620270024,
+  "lams": [
+   "avg"
+  ]
+ },
+ {
+  "target": "mic",
+  "model": "rich_dipeptide",
+  "dim": 85,
+  "spearman": 0.44941002223777266,
+  "null": -0.06473971767383412,
+  "margin": 0.5141497399116067,
+  "lams": [
+   "avg"
+  ]
+ },
+ {
+  "target": "mic",
+  "model": "rich_ends",
+  "dim": 42,
+  "spearman": 0.44589012361055486,
+  "null": -0.05382369774561653,
+  "margin": 0.4997138213561714,
+  "lams": [
+   "avg"
+  ]
+ },
+ {
+  "target": "hc",
+  "model": "rich_periodicity",
+  "dim": 41,
+  "spearman": 0.41025106623284996,
+  "null": 0.039890888677883235,
+  "margin": 0.37036017755496675,
+  "lams": [
+   "avg"
+  ]
+ },
+ {
+  "target": "hc",
+  "model": "rich_windows",
+  "dim": 55,
+  "spearman": 0.41270717580615285,
+  "null": 0.01995318710674368,
+  "margin": 0.39275398869940914,
+  "lams": [
+   "avg"
+  ]
+ },
+ {
+  "target": "hc",
+  "model": "rich_ph",
+  "dim": 42,
+  "spearman": 0.4155794311271461,
+  "null": 0.026884797165614954,
+  "margin": 0.38869463396153114,
+  "lams": [
+   "avg"
+  ]
+ },
+ {
+  "target": "hc",
+  "model": "rich_indices",
+  "dim": 41,
+  "spearman": 0.40299061425267135,
+  "null": 0.033975925728011794,
+  "margin": 0.3690146885246596,
+  "lams": [
+   "avg"
+  ]
+ },
+ {
+  "target": "hc",
+  "model": "rich_autocorr",
+  "dim": 44,
+  "spearman": 0.4230758688204237,
+  "null": 0.057434478517831386,
+  "margin": 0.3656413903025923,
+  "lams": [
+   "avg"
+  ]
+ },
+ {
+  "target": "hc",
+  "model": "rich_dipeptide",
+  "dim": 85,
+  "spearman": 0.32228440625813987,
+  "null": 0.045888952729326145,
+  "margin": 0.27639545352881373,
+  "lams": [
+   "avg"
+  ]
+ },
+ {
+  "target": "hc",
+  "model": "rich_ends",
+  "dim": 42,
+  "spearman": 0.4017093976547315,
+  "null": 0.025146136149498552,
+  "margin": 0.37656326150523295,
+  "lams": [
+   "avg"
+  ]
+ },
+ {
+  "target": "mic",
+  "model": "shape",
+  "dim": 66,
+  "spearman": 0.444956087791456,
+  "null": -0.04367997075944957,
+  "margin": 0.4886360585509056,
+  "lams": [
+   "avg"
+  ]
+ },
+ {
+  "target": "mic",
+  "model": "shape_autocorr",
+  "dim": 74,
+  "spearman": 0.4399979056414303,
+  "null": -0.04622109015051927,
+  "margin": 0.4862189957919496,
+  "lams": [
+   "avg"
+  ]
+ },
+ {
+  "target": "mic",
+  "model": "shape_ph",
+  "dim": 72,
+  "spearman": 0.44670803008441967,
+  "null": -0.03261942622079484,
+  "margin": 0.4793274563052145,
+  "lams": [
+   "avg"
+  ]
+ },
+ {
+  "target": "mic",
+  "model": "no_dipeptide",
+  "dim": 85,
+  "spearman": 0.440385908525204,
+  "null": -0.03839569252276294,
+  "margin": 0.4787816010479669,
+  "lams": [
+   "avg"
+  ]
+ },
+ {
+  "target": "hc",
+  "model": "shape",
+  "dim": 66,
+  "spearman": 0.40244895601677594,
+  "null": 0.019804312885010417,
+  "margin": 0.3826446431317655,
+  "lams": [
+   "avg"
+  ]
+ },
+ {
+  "target": "hc",
+  "model": "shape_autocorr",
+  "dim": 74,
+  "spearman": 0.408285241933122,
+  "null": 0.030021952256290656,
+  "margin": 0.3782632896768313,
+  "lams": [
+   "avg"
+  ]
+ },
+ {
+  "target": "hc",
+  "model": "shape_ph",
+  "dim": 72,
+  "spearman": 0.40275931566085615,
+  "null": 0.01782809041094365,
+  "margin": 0.3849312252499125,
+  "lams": [
+   "avg"
+  ]
+ },
+ {
+  "target": "hc",
+  "model": "no_dipeptide",
+  "dim": 85,
+  "spearman": 0.40975132578497847,
+  "null": 0.03733911716652936,
+  "margin": 0.3724122086184491,
+  "lams": [
+   "avg"
+  ]
+ },
+ {
+  "target": "hc",
+  "model": "desc_plus_potency",
+  "dim": 37,
+  "spearman": 0.4153263744191012,
+  "null": 0.03272943402248874,
+  "margin": 0.38259694039661246,
+  "delta_vs_base": 0.007886363587438439
+ },
+ {
+  "target": "mic",
+  "model": "esm2_35m_mean",
+  "dim": 480,
+  "spearman": 0.4587854255479992,
+  "null": -0.06389987341552734,
+  "margin": 0.5226852989635266,
+  "lams": [
+   "avg"
+  ],
+  "n": 2904
+ },
+ {
+  "target": "mic",
+  "model": "esm2_35m_max",
+  "dim": 480,
+  "spearman": 0.3845854726563925,
+  "null": -0.050484336083611615,
+  "margin": 0.4350698087400041,
+  "lams": [
+   "avg"
+  ],
+  "n": 2904
+ },
+ {
+  "target": "mic",
+  "model": "esm2_650m_mean",
+  "dim": 1280,
+  "spearman": 0.41640149230271634,
+  "null": -0.03928628060974308,
+  "margin": 0.45568777291245943,
+  "lams": [
+   "avg"
+  ],
+  "n": 2904
+ },
+ {
+  "target": "mic",
+  "model": "esm2_650m_max",
+  "dim": 1280,
+  "spearman": 0.3703369545669659,
+  "null": -0.01604258139641489,
+  "margin": 0.3863795359633808,
+  "lams": [
+   "avg"
+  ],
+  "n": 2904
+ },
+ {
+  "target": "mic",
+  "model": "esm1b_650m_max",
+  "dim": 1280,
+  "spearman": 0.3300306142951776,
+  "null": -0.02106819725053183,
+  "margin": 0.35109881154570943,
+  "lams": [
+   "avg"
+  ],
+  "n": 2904
+ },
+ {
+  "target": "mic",
+  "model": "ankh_base_mean",
+  "dim": 768,
+  "spearman": 0.3870267544349175,
+  "null": -0.027439906623895675,
+  "margin": 0.4144666610588132,
+  "lams": [
+   "avg"
+  ],
+  "n": 2904
+ },
+ {
+  "target": "mic",
+  "model": "ankh_base_max",
+  "dim": 768,
+  "spearman": 0.31552149050006617,
+  "null": -0.05670968838362276,
+  "margin": 0.37223117888368895,
+  "lams": [
+   "avg"
+  ],
+  "n": 2904
+ },
+ {
+  "target": "mic",
+  "model": "esm1b_650m_mean",
+  "dim": 1280,
+  "spearman": 0.3776084641922685,
+  "null": -0.04087574570441636,
+  "margin": 0.4184842098966849,
+  "lams": [
+   "avg"
+  ],
+  "n": 2904
+ },
+ {
+  "target": "mic",
+  "model": "ankh_large_mean",
+  "dim": 1536,
+  "spearman": 0.30920971275097664,
+  "null": -0.006722146488533809,
+  "margin": 0.31593185923951045,
+  "lams": [
+   "avg"
+  ],
+  "n": 2904
+ },
+ {
+  "target": "mic",
+  "model": "ankh_large_max",
+  "dim": 1536,
+  "spearman": 0.23949879926061887,
+  "null": 0.021400726246299413,
+  "margin": 0.21809807301431947,
+  "lams": [
+   "avg"
+  ],
+  "n": 2904
+ }
+]

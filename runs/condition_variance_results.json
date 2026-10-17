@@ -1,0 +1,491 @@
+{
+ "measurements": 51345,
+ "unit": "uM",
+ "sequences": 6760,
+ "sequences_multi_organism": 6002,
+ "spread_median": 0.7835292477179516,
+ "spread_mean": 0.8664518797371494,
+ "spread_p90": 1.8027194418743808,
+ "between_organism_pairs": [
+  {
+   "a": "E. coli",
+   "b": "S. aureus",
+   "n": 4064,
+   "rho": 0.6439249615778849
+  },
+  {
+   "a": "E. coli",
+   "b": "P. aeruginosa",
+   "n": 2547,
+   "rho": 0.7618902885077836
+  },
+  {
+   "a": "S. aureus",
+   "b": "P. aeruginosa",
+   "n": 2510,
+   "rho": 0.6289696072514751
+  },
+  {
+   "a": "S. aureus",
+   "b": "C. albicans",
+   "n": 1693,
+   "rho": 0.6458457963696667
+  },
+  {
+   "a": "E. coli",
+   "b": "C. albicans",
+   "n": 1689,
+   "rho": 0.6003810773227356
+  },
+  {
+   "a": "E. coli",
+   "b": "B. subtilis",
+   "n": 1519,
+   "rho": 0.635216093568204
+  },
+  {
+   "a": "S. aureus",
+   "b": "B. subtilis",
+   "n": 1298,
+   "rho": 0.6178684676538851
+  },
+  {
+   "a": "P. aeruginosa",
+   "b": "C. albicans",
+   "n": 1063,
+   "rho": 0.54700731573008
+  },
+  {
+   "a": "E. coli",
+   "b": "S. epidermidis",
+   "n": 998,
+   "rho": 0.7010433694440269
+  },
+  {
+   "a": "S. aureus",
+   "b": "S. epidermidis",
+   "n": 983,
+   "rho": 0.7859057525095351
+  },
+  {
+   "a": "P. aeruginosa",
+   "b": "B. subtilis",
+   "n": 945,
+   "rho": 0.5401694206688396
+  },
+  {
+   "a": "P. aeruginosa",
+   "b": "S. epidermidis",
+   "n": 830,
+   "rho": 0.6281147151881326
+  },
+  {
+   "a": "E. coli",
+   "b": "K. pneumoniae",
+   "n": 810,
+   "rho": 0.837684249469943
+  },
+  {
+   "a": "E. coli",
+   "b": "S. typhimurium",
+   "n": 795,
+   "rho": 0.8194406789759922
+  },
+  {
+   "a": "S. aureus",
+   "b": "K. pneumoniae",
+   "n": 768,
+   "rho": 0.6388182931617934
+  },
+  {
+   "a": "S. aureus",
+   "b": "S. typhimurium",
+   "n": 722,
+   "rho": 0.6495071612053477
+  },
+  {
+   "a": "S. aureus",
+   "b": "E. faecalis",
+   "n": 715,
+   "rho": 0.7709149521215951
+  },
+  {
+   "a": "P. aeruginosa",
+   "b": "K. pneumoniae",
+   "n": 698,
+   "rho": 0.7695907680162442
+  },
+  {
+   "a": "E. coli",
+   "b": "E. faecalis",
+   "n": 684,
+   "rho": 0.5820548575697884
+  },
+  {
+   "a": "E. coli",
+   "b": "M. luteus",
+   "n": 658,
+   "rho": 0.6334079862716581
+  },
+  {
+   "a": "P. aeruginosa",
+   "b": "S. typhimurium",
+   "n": 614,
+   "rho": 0.7997596778594087
+  },
+  {
+   "a": "P. aeruginosa",
+   "b": "E. faecalis",
+   "n": 599,
+   "rho": 0.5808356875086618
+  },
+  {
+   "a": "C. albicans",
+   "b": "B. subtilis",
+   "n": 594,
+   "rho": 0.46229326016658345
+  },
+  {
+   "a": "S. aureus",
+   "b": "M. luteus",
+   "n": 517,
+   "rho": 0.6212070884106415
+  },
+  {
+   "a": "B. subtilis",
+   "b": "S. epidermidis",
+   "n": 503,
+   "rho": 0.7770810314295127
+  },
+  {
+   "a": "S. epidermidis",
+   "b": "S. typhimurium",
+   "n": 449,
+   "rho": 0.6278657018095
+  },
+  {
+   "a": "B. subtilis",
+   "b": "S. typhimurium",
+   "n": 445,
+   "rho": 0.5720975137593536
+  },
+  {
+   "a": "C. albicans",
+   "b": "S. epidermidis",
+   "n": 439,
+   "rho": 0.5677987890386966
+  },
+  {
+   "a": "E. coli",
+   "b": "B. cereus",
+   "n": 381,
+   "rho": 0.728427246091367
+  },
+  {
+   "a": "P. aeruginosa",
+   "b": "M. luteus",
+   "n": 350,
+   "rho": 0.537317670432078
+  },
+  {
+   "a": "S. aureus",
+   "b": "A. baumannii",
+   "n": 336,
+   "rho": 0.5549528787779896
+  },
+  {
+   "a": "E. coli",
+   "b": "A. baumannii",
+   "n": 332,
+   "rho": 0.7650891269107734
+  },
+  {
+   "a": "S. aureus",
+   "b": "B. cereus",
+   "n": 327,
+   "rho": 0.7354473933152559
+  },
+  {
+   "a": "E. coli",
+   "b": "S. enterica",
+   "n": 323,
+   "rho": 0.8452882434937647
+  },
+  {
+   "a": "C. albicans",
+   "b": "E. faecalis",
+   "n": 320,
+   "rho": 0.6311563426504042
+  },
+  {
+   "a": "P. aeruginosa",
+   "b": "A. baumannii",
+   "n": 315,
+   "rho": 0.7528803528016608
+  },
+  {
+   "a": "S. aureus",
+   "b": "S. enterica",
+   "n": 311,
+   "rho": 0.6585315705570165
+  },
+  {
+   "a": "C. albicans",
+   "b": "K. pneumoniae",
+   "n": 306,
+   "rho": 0.5242920556275721
+  },
+  {
+   "a": "S. epidermidis",
+   "b": "E. faecalis",
+   "n": 304,
+   "rho": 0.7748030747366929
+  },
+  {
+   "a": "B. subtilis",
+   "b": "M. luteus",
+   "n": 300,
+   "rho": 0.7166736508801563
+  },
+  {
+   "a": "E. coli",
+   "b": "E. cloacae",
+   "n": 278,
+   "rho": 0.6760599522679142
+  },
+  {
+   "a": "S. epidermidis",
+   "b": "M. luteus",
+   "n": 270,
+   "rho": 0.7652444608764372
+  },
+  {
+   "a": "S. aureus",
+   "b": "E. cloacae",
+   "n": 267,
+   "rho": 0.3216937171256024
+  },
+  {
+   "a": "S. epidermidis",
+   "b": "K. pneumoniae",
+   "n": 266,
+   "rho": 0.6753511305918926
+  },
+  {
+   "a": "K. pneumoniae",
+   "b": "E. faecalis",
+   "n": 262,
+   "rho": 0.4771885690101826
+  },
+  {
+   "a": "E. coli",
+   "b": "B. megaterium",
+   "n": 260,
+   "rho": 0.5561838232540477
+  },
+  {
+   "a": "P. aeruginosa",
+   "b": "S. enterica",
+   "n": 259,
+   "rho": 0.7847384304555339
+  },
+  {
+   "a": "P. aeruginosa",
+   "b": "E. cloacae",
+   "n": 255,
+   "rho": 0.6621672101414504
+  },
+  {
+   "a": "C. albicans",
+   "b": "S. typhimurium",
+   "n": 253,
+   "rho": 0.5014428655762626
+  },
+  {
+   "a": "S. aureus",
+   "b": "E. faecium",
+   "n": 242,
+   "rho": 0.7501403968980814
+  },
+  {
+   "a": "B. subtilis",
+   "b": "K. pneumoniae",
+   "n": 237,
+   "rho": 0.5991954157230311
+  },
+  {
+   "a": "E. coli",
+   "b": "E. faecium",
+   "n": 225,
+   "rho": 0.6742637951177475
+  },
+  {
+   "a": "K. pneumoniae",
+   "b": "S. typhimurium",
+   "n": 224,
+   "rho": 0.9256788689018902
+  },
+  {
+   "a": "E. coli",
+   "b": "L. monocytogenes",
+   "n": 217,
+   "rho": 0.6606118049947908
+  },
+  {
+   "a": "S. aureus",
+   "b": "L. monocytogenes",
+   "n": 208,
+   "rho": 0.6619182069030526
+  },
+  {
+   "a": "C. albicans",
+   "b": "M. luteus",
+   "n": 208,
+   "rho": 0.5353433362224777
+  },
+  {
+   "a": "E. coli",
+   "b": "S. cerevisiae",
+   "n": 206,
+   "rho": 0.5105147410037375
+  },
+  {
+   "a": "S. aureus",
+   "b": "B. megaterium",
+   "n": 204,
+   "rho": 0.6108939782168337
+  },
+  {
+   "a": "K. pneumoniae",
+   "b": "E. cloacae",
+   "n": 200,
+   "rho": 0.7669817741880338
+  },
+  {
+   "a": "P. aeruginosa",
+   "b": "E. faecium",
+   "n": 194,
+   "rho": 0.5913729878325596
+  }
+ ],
+ "between_organism_rho_median": 0.5960311776499508,
+ "within_organism_reliability": [
+  {
+   "organism": "S. aureus",
+   "n_replicated": 2100,
+   "split_half": 0.8513727001908353,
+   "spearman_brown": 0.9197204864294237,
+   "ceiling": 0.9590205870727821
+  },
+  {
+   "organism": "E. coli",
+   "n_replicated": 2099,
+   "split_half": 0.8572649893853668,
+   "spearman_brown": 0.9231477406668452,
+   "ceiling": 0.9608057767659629
+  },
+  {
+   "organism": "P. aeruginosa",
+   "n_replicated": 1035,
+   "split_half": 0.8334917643548957,
+   "spearman_brown": 0.9091851739493962,
+   "ceiling": 0.953512020873044
+  },
+  {
+   "organism": "C. albicans",
+   "n_replicated": 654,
+   "split_half": 0.8375414190509184,
+   "spearman_brown": 0.9115891596974229,
+   "ceiling": 0.9547717840915823
+  },
+  {
+   "organism": "B. subtilis",
+   "n_replicated": 520,
+   "split_half": 0.8922507130470831,
+   "spearman_brown": 0.9430576053109746,
+   "ceiling": 0.9711115308299941
+  },
+  {
+   "organism": "S. epidermidis",
+   "n_replicated": 240,
+   "split_half": 0.8282067713299557,
+   "spearman_brown": 0.9060318387590968,
+   "ceiling": 0.9518570474388981
+  },
+  {
+   "organism": "M. luteus",
+   "n_replicated": 238,
+   "split_half": 0.9290949369892549,
+   "spearman_brown": 0.9632443890390346,
+   "ceiling": 0.9814501459773872
+  },
+  {
+   "organism": "S. typhimurium",
+   "n_replicated": 224,
+   "split_half": 0.8491846495639376,
+   "spearman_brown": 0.9184422440064995,
+   "ceiling": 0.9583539241879795
+  },
+  {
+   "organism": "E. faecalis",
+   "n_replicated": 184,
+   "split_half": 0.8157821979990151,
+   "spearman_brown": 0.8985463112238945,
+   "ceiling": 0.9479168271657037
+  },
+  {
+   "organism": "K. pneumoniae",
+   "n_replicated": 167,
+   "split_half": 0.8093710463382012,
+   "spearman_brown": 0.8946435259657807,
+   "ceiling": 0.9458559752762472
+  },
+  {
+   "organism": "A. baumannii",
+   "n_replicated": 135,
+   "split_half": 0.8491718900712875,
+   "spearman_brown": 0.9184347811371403,
+   "ceiling": 0.958350030592758
+  },
+  {
+   "organism": "B. pyocyaneus",
+   "n_replicated": 99,
+   "split_half": 0.7297898198618042,
+   "spearman_brown": 0.8437901662759333,
+   "ceiling": 0.9185805170348069
+  },
+  {
+   "organism": "P. syringae",
+   "n_replicated": 85,
+   "split_half": 0.6331522270515524,
+   "spearman_brown": 0.7753744158860535,
+   "ceiling": 0.8805534713383699
+  },
+  {
+   "organism": "B. megaterium",
+   "n_replicated": 82,
+   "split_half": 0.875947638470089,
+   "spearman_brown": 0.9338721620017707,
+   "ceiling": 0.9663706131716603
+  },
+  {
+   "organism": "L. monocytogenes",
+   "n_replicated": 82,
+   "split_half": 0.9492704739847153,
+   "spearman_brown": 0.9739751221329572,
+   "ceiling": 0.9869017793747041
+  },
+  {
+   "organism": "B. cereus",
+   "n_replicated": 69,
+   "split_half": 0.8889173097614164,
+   "spearman_brown": 0.9411924017718838,
+   "ceiling": 0.9701507108547021
+  }
+ ],
+ "between_variance": 0.16496501669027608,
+ "within_variance": 0.057493208298182344,
+ "between_share": 0.7415550344287554,
+ "panel_sequences": 2904,
+ "grampa_sequences_not_in_panel": 3856
+}

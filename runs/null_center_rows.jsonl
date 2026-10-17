@@ -1,0 +1,12 @@
+{"target": "mic", "scheme": "global", "perm": 0, "seed": 20261014, "last": -0.06390349619905021, "avg_raw": -0.08224606322166482, "delta": -0.01834256702261461, "secs": 19.4}
+{"target": "mic", "scheme": "within_fold", "perm": 0, "seed": 20261014, "last": -0.019840500912571706, "avg_raw": -0.04052062104497488, "delta": -0.02068012013240317, "secs": 9.4}
+{"target": "mic", "scheme": "global", "perm": 1, "seed": 20261015, "last": 0.0017589543770379983, "avg_raw": 0.030830647517890365, "delta": 0.029071693140852367, "secs": 15.3}
+{"target": "mic", "scheme": "within_fold", "perm": 1, "seed": 20261015, "last": -0.011280823104728482, "avg_raw": 0.010024658014123757, "delta": 0.021305481118852238, "secs": 53.4}
+{"target": "mic", "scheme": "global", "perm": 2, "seed": 20261016, "last": 0.01735695063130341, "avg_raw": 0.017206578777833787, "delta": -0.0001503718534696212, "secs": 53.8}
+{"target": "mic", "scheme": "within_fold", "perm": 2, "seed": 20261016, "last": 0.06338293427703737, "avg_raw": 0.04324233032695985, "delta": -0.020140603950077517, "secs": 61.8}
+{"target": "mic", "scheme": "global", "perm": 3, "seed": 20261017, "last": -0.023579084149281466, "avg_raw": 0.003628791605652255, "delta": 0.02720787575493372, "secs": 51.0}
+{"target": "mic", "scheme": "within_fold", "perm": 3, "seed": 20261017, "last": -0.0007886221779275777, "avg_raw": 0.05140350317227845, "delta": 0.05219212535020603, "secs": 60.6}
+{"target": "mic", "scheme": "global", "perm": 4, "seed": 20261018, "last": -0.02152974359531113, "avg_raw": -0.059912959356480444, "delta": -0.03838321576116931, "secs": 41.2}
+{"target": "mic", "scheme": "within_fold", "perm": 4, "seed": 20261018, "last": 0.020106175869211512, "avg_raw": -0.017972402433850038, "delta": -0.03807857830306155, "secs": 70.5}
+{"target": "mic", "scheme": "global", "perm": 5, "seed": 20261019, "last": -0.045095332526848, "avg_raw": -0.062239281273853024, "delta": -0.017143948747005026, "secs": 26.7}
+{"target": "mic", "scheme": "within_fold", "perm": 5, "seed": 20261019, "last": 0.004388442050305462, "avg_raw": 0.008780404230025707, "delta": 0.004391962179720245, "secs": 37.3}

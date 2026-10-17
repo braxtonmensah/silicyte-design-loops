@@ -1,0 +1,80 @@
+[
+ {
+  "organism": "E. coli",
+  "n": 2754,
+  "n_clusters": 1126,
+  "target_agreement_with_pooled": 0.9276808259138607,
+  "per_organism_mean": 0.5385428403156736,
+  "per_organism_sd": 0.009435081017479774,
+  "pooled_mean": 0.5132269059512045,
+  "pooled_sd": 0.008681209203997209,
+  "delta_mean": 0.02531593436446918,
+  "delta_sd": 0.002626931213938924,
+  "delta_positive_fraction": 1.0
+ },
+ {
+  "organism": "S. aureus",
+  "n": 2614,
+  "n_clusters": 1100,
+  "target_agreement_with_pooled": 0.752770999530431,
+  "per_organism_mean": 0.4703175493304311,
+  "per_organism_sd": 0.01578542950352166,
+  "pooled_mean": 0.5063091812705024,
+  "pooled_sd": 0.011301061618726774,
+  "delta_mean": -0.03599163194007134,
+  "delta_sd": 0.006956610905357,
+  "delta_positive_fraction": 0.0
+ },
+ {
+  "organism": "P. aeruginosa",
+  "n": 1550,
+  "n_clusters": 692,
+  "target_agreement_with_pooled": 0.8682784328309867,
+  "per_organism_mean": 0.46128236968361896,
+  "per_organism_sd": 0.015322803119224205,
+  "pooled_mean": 0.4605810652285672,
+  "pooled_sd": 0.017905612689903306,
+  "delta_mean": 0.0007013044550517785,
+  "delta_sd": 0.008204895827120858,
+  "delta_positive_fraction": 0.5833333333333334
+ },
+ {
+  "organism": "C. albicans",
+  "n": 1121,
+  "n_clusters": 537,
+  "target_agreement_with_pooled": 0.6037584368676362,
+  "per_organism_mean": 0.23593221854227112,
+  "per_organism_sd": 0.022608816914394113,
+  "pooled_mean": 0.38364525377856823,
+  "pooled_sd": 0.016078374803536244,
+  "delta_mean": -0.1477130352362971,
+  "delta_sd": 0.021213618337663054,
+  "delta_positive_fraction": 0.0
+ },
+ {
+  "organism": "B. subtilis",
+  "n": 920,
+  "n_clusters": 401,
+  "target_agreement_with_pooled": 0.7034737647866759,
+  "per_organism_mean": 0.49575699694945374,
+  "per_organism_sd": 0.021250910348753586,
+  "pooled_mean": 0.49431858060562633,
+  "pooled_sd": 0.017478012559126954,
+  "delta_mean": 0.0014384163438273302,
+  "delta_sd": 0.02143210165631097,
+  "delta_positive_fraction": 0.4166666666666667
+ },
+ {
+  "organism": "S. typhimurium",
+  "n": 542,
+  "n_clusters": 212,
+  "target_agreement_with_pooled": 0.9053049361134521,
+  "per_organism_mean": 0.509083439848596,
+  "per_organism_sd": 0.03131013152962173,
+  "pooled_mean": 0.5670754592503137,
+  "pooled_sd": 0.026476316193540492,
+  "delta_mean": -0.057992019401717665,
+  "delta_sd": 0.017899497862147114,
+  "delta_positive_fraction": 0.0
+ }
+]
