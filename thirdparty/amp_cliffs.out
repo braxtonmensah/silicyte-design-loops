@@ -1,0 +1,29 @@
+{
+ "md5": {
+  "AMPlify_AMP_train_common.fa": "67470a4ac0e0356c2f756ce2831a536d",
+  "AMPlify_AMP_test_common.fa": "9251af687acaa4b55db56a656d8f33bd",
+  "AMPlify_non_AMP_train_balanced.fa": "7652c9ab3b42404d8a037ed22825bd97",
+  "AMPlify_non_AMP_test_balanced.fa": "7dbc53abf6fcd66c0ad64d9e7925b476"
+ },
+ "md5_match_issue": true,
+ "n": {
+  "pos_tr": 3338,
+  "pos_te": 835,
+  "neg_tr": 3338,
+  "neg_te": 835
+ },
+ "reproduce_pos_same_pct": 63.47,
+ "reproduce_neg_same_pct": 30.18,
+ "q_pos_cross_share": 0.018,
+ "pos_cross_count": 15,
+ "pos_same_only": 517,
+ "pos_both": 13,
+ "pos_cross_only": 2,
+ "pos_nearest_is_opposite_and_twin": 3,
+ "neg_cross_count": 5,
+ "neg_cross_share": 0.006,
+ "neg_nearest_is_opposite_and_twin": 4,
+ "n_pos_test": 835,
+ "n_neg_test": 835,
+ "verdict_allowed": true
+}
